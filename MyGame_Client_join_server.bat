@@ -1,0 +1,1 @@
+"D:\MGIDevelopment\UnrealEngine\Engine\Binaries\Win64\UE4Editor.exe" "D:\UE\MyGame\MyGame.uproject" 127.0.0.1 -game -windowed -ResX=1280 -ResY=720 -log

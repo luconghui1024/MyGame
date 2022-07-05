@@ -1,0 +1,1 @@
+"D:\MGIDevelopment\UnrealEngine\Engine\Binaries\Win64\UE4Editor.exe" "D:\UE\MyGame\MyGame.uproject" "/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap?listen" -server -statsport=10001 -ResX=800 -ResY=900 -WinX=0 -WinY=20 -log networkprofiler=true
