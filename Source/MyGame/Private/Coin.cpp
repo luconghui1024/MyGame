@@ -3,7 +3,7 @@
 
 #include "Coin.h"
 #include "Components/StaticMeshComponent.h"
-#include "Components/BoxComponent.h"
+#include "Components/SphereComponent.h"
 #include "Sound/SoundBase.h"
 #include "kismet/GameplayStatics.h"
 
@@ -18,9 +18,9 @@ ACoin::ACoin()
 	CoinMeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CoinMeshComp"));
 	RootComponent = CoinMeshComp;
 
-	CoinBoxComp = CreateDefaultSubobject<UBoxComponent>(TEXT("CoinSpereComp"));
-	CoinBoxComp->SetupAttachment(CoinMeshComp);
-	CoinBoxComp->OnComponentBeginOverlap.AddDynamic(this, &ACoin::BeginOverlap);
+	CoinSphereComp = CreateDefaultSubobject<USphereComponent>(TEXT("CoinSpereComp"));
+	CoinSphereComp->SetupAttachment(CoinMeshComp);
+	CoinSphereComp->OnComponentBeginOverlap.AddDynamic(this, &ACoin::BeginOverlap);
 }
 
 // Called when the game starts or when spawned

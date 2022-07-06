@@ -96,10 +96,18 @@ void AMainPlayer::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	int32 speed = GetVelocity().Size();
-	if (speed > 0)
+	if (speed == 0)
+	{
+		PlayAnimMontage(AnimIdle);
+	}
+	else if (speed>0 && speed<100)
 	{
 		PlayAnimMontage(AnimWalk);
-	}	
+	}
+	else if (speed > 100)
+	{
+		PlayAnimMontage(AnimRun);
+	}
 }
 
 // Called to bind functionality to input

@@ -16,7 +16,7 @@ public:
 	class UStaticMeshComponent* CoinMeshComp;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	class UBoxComponent* CoinBoxComp;
+	class USphereComponent* CoinSphereComp;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class USoundBase* SoundClass;
