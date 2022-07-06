@@ -96,6 +96,7 @@ void AMainPlayer::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	int32 speed = GetVelocity().Size();
+	UE_LOG(LogTemp, Warning, TEXT("speed£º%d"), speed);
 	if (speed == 0)
 	{
 		PlayAnimMontage(AnimIdle);
